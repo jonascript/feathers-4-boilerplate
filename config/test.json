@@ -1,4 +1,4 @@
 {
-  "sqlite": "sqlite://trackapp.test.sqlite",
+  "sqlite": "sqlite://db.test.sqlite",
   "port": 8998
 }

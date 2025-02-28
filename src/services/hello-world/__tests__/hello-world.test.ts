@@ -1,6 +1,6 @@
 import app from '../../../app';
 
-describe("'hello world' service", () => {
+describe('\'hello world\' service', () => {
   it('registered the service', () => {
     const service = app.service('hello-world');
     expect(service).toBeTruthy();

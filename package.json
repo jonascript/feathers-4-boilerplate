@@ -27,7 +27,7 @@
     "lint": "eslint src/. --config .eslintrc.json --ext .ts --fix",
     "dev": "ts-node-dev --no-notify src/",
     "start": "npm run compile && node lib/",
-    "jest": "NODE_ENV=test node -expose-gc ./node_modules/.bin/jest --logHeapUsage --detectOpenHandles --runInBand",
+    "jest": "NODE_ENV=test node -expose-gc ./node_modules/.bin/jest --logHeapUsage --detectOpenHandles --runInBand --silent",
     "compile": "shx rm -rf lib/ && tsc",
     "db:wipe:dev": "NODE_ENV=development ts-node-dev --exit-child './src/scripts/wipe-db.ts'",
     "db:wipe:test": "NODE_ENV=test ts-node-dev --exit-child './src/scripts/wipe-db.ts'"

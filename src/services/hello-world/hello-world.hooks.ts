@@ -1,5 +1,5 @@
 import { HookContext } from '@feathersjs/feathers';
-import { populate } from 'feathers-hooks-common';
+// import { populate } from 'feathers-hooks-common';
 
 export default {
   before: {
