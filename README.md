@@ -1,15 +1,13 @@
-#
+# Feathers 4 boilerplate
+A lightweight starter project using feathers 4 (https://crow.docs.feathersjs.com/)
 
-This is a coding exercise for this [challenge](./EXERCISE.md)
 
 ## Table of Contents
 
 - [Tech](#tech)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Approach](#approach)
 - [Known Issues](#known-issues--caveats)
-- [Support](#support)
 
 ## Tech
 
@@ -19,6 +17,7 @@ This is a coding exercise for this [challenge](./EXERCISE.md)
 - TypeSript
 - Feathers v4 (Dove)
 - Sequelize
+- SQLite 
 
 ## Approach
 
@@ -113,15 +112,3 @@ npm test
 Feel free to remove any sections that aren't applicable to your project.
 
 ## Known Issues / Caveats
-
-- Sequelize and SQLite don't quite jive with how they store and represent timestamps and JSON fields. I've added some logic to handle this but there may be some inconsistencies there.
-
-- The Jest tests because the mock documents are using the same data run into conflicts between suites so as a workaround I wipe the test db after each suite. Given more time I would resolve this as this will slow down with more tests.
-
-- There's a websocket server running but it currently isn't being used.
-
-- The webhook-document service doesn't record the document ID when it receives requests as that's being used as a foreign key. I would refactor this given more time and move this request to a "body" field which would preserve the data as it's received or change this to a queue.
-
-## Support
-
-If you have any issues please email joncrockett@gmail.com and I'll help right away.
